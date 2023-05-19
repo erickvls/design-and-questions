@@ -1,5 +1,8 @@
 package com.examples.self.learning.design.patterns.structural.bridge;
 
+/**
+ * Concrete implementations
+ */
 public class TextMessageSender implements MessageSender{
 
     @Override

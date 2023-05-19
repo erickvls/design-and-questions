@@ -1,7 +1,7 @@
 package com.examples.self.learning.design.patterns.structural.bridge;
 
 /**
- * See Problem.md
+ * See Problem.md and Readme.md
  */
 public class Main {
     public static void main(String[] args) {

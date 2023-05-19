@@ -1,4 +1,4 @@
-- Reference: https://springframework.guru/gang-of-four-design-patterns/bridge-pattern/ 
+Reference: https://springframework.guru/gang-of-four-design-patterns/bridge-pattern/ 
 
 ### Problem:
 - To understand how the bridge pattern works, consider a messaging application that clients can use to send different types of messages, such as a text or an email message. The most intuitive approach is to first create an interface or an abstract base class, Message. Next, we create the derived classes: TextMessage and EmailMessage. Finally, to send messages, we create two message sender classes: TextMessageSender that extends TextMessage and EmailMessageSender that extends EmailMessage. This is how our inheritance hierarchy looks like.
