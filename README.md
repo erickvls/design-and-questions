@@ -88,3 +88,22 @@ Car car = new CarBuilder()
 - It creates a middle-layer class that serves as a translator.
 
 ![adapter.png](src/main/resources/imgs/adapter.png)
+
+### 2 - Bridge
+- Lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
+- The Bridge pattern attempts to solve this problem by switching from inheritance to the object composition. What this means is that you extract one of the dimensions into a separate class hierarchy, so that the original classes will reference an object of the new hierarchy, instead of having all of its state and behaviors within one class.
+- When we try to extend one class in two independent dimensions, it might be a good case to use bridge pattern, since switch from inheritance to composition.
+- It divides and organizes a single class that has multiple variants of some functionality into two hierarchies: abstractions and implementations.
+- Client code won't be exposed to implementation details
+
+![bridge.png](src/main/resources/imgs/bridge.png)
+
+### 3 - Decorator
+- Lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors
+- It allows behaviour and functionality to be dynamically added to an object without affecting the behaviour of other objects in the same class.
+- Because it offers a wrapper to an existing class, the decorator design pattern is also known as Wrapper. To implement the wrapper, this approach uses abstract classes or interfaces with composition.
+- When use it ?
+  - When one has an object that requires functionality extension.
+  - Use the Decorator pattern when you need to be able to assign extra behaviors to objects at runtime without breaking the code that uses these objects
+
+![decorator.png](src/main/resources/imgs/decorator.png)
