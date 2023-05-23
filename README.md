@@ -107,3 +107,16 @@ Car car = new CarBuilder()
   - Use the Decorator pattern when you need to be able to assign extra behaviors to objects at runtime without breaking the code that uses these objects
 
 ![decorator.png](src/main/resources/imgs/decorator.png)
+
+### 4 - Facade
+- It's a design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
+- A facade is a class that provides a simple interface to a complex subsystem which contains lots of moving parts.
+- It is a centralized place to put all the logic inside it, to center it, and to restrict direct access to the inner workings of the library (be careful with this class not be a GOD CLASS)
+- If Facade class is too big, we might create another one acting as an Additional Facade.
+- When use it?
+  - Having a facade is handy when you need to integrate your app with a sophisticated library that has dozens of features, but you just need a tiny bit of its functionality.
+  - For instance, an app that uploads short funny videos with cats to social media could potentially use a professional video conversion library. However, all that it really needs is a class with the single method encode(filename, format). After creating such a class and connecting it with the video conversion library, you’ll have your first facade.
+- Analogy:
+  - When you call a shop to place a phone order, an operator is your facade to all services and departments of the shop. The operator provides you with a simple voice interface to the ordering system, payment gateways, and various delivery services
+
+![facade.png](src/main/resources/imgs/facade.png)
