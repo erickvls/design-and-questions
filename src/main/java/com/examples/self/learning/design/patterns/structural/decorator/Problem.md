@@ -5,4 +5,8 @@ Reference: https://salithachathuranga94.medium.com/decorator-design-pattern-in-j
 
 ![decorator2.png](../../../../../../../../../resources/imgs/decorator2.png)
 
+
+![decorator3.png](../../../../../../../../../resources/imgs/decorator-example.png)
+
+
  

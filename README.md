@@ -136,3 +136,24 @@ Car car = new CarBuilder()
 
 
 ![proxy.png](src/main/resources/imgs/proxy.png)
+
+
+## # Behavioral
+
+
+### 1 - Chain of Responsibility
+- It is a pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+- Transforms particular behaviors into stand-alone objects called handlers.
+- Each handler is responsible for one single task.
+- Each check should be extracted to its own class with a single method that performs the check. The request, along with its data, is passed to this method as an argument.
+- Each linked handler has a field for storing a reference to the next handler in the chain. In addition to processing a request, handlers pass the request further along the chain. The request travels along the chain until all handlers have had a chance to process it.
+- When use it?
+  - Use the pattern when it’s essential to execute several handlers in a particular order.
+  - You realized that these checks must be performed sequentially.
+
+  
+![chain-of-responsibility.png](src/main/resources/imgs/chain-of-responsibility.png)
+
+
+
+![chain-of-responsibility.png](src/main/resources/imgs/chain-of-responsibility2.png)
